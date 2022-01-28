@@ -8,16 +8,15 @@ def create_dictionary(key, value):
         dict: dictionary with keys and values
     """
     
-    test_values=[]
-    for i in range(len(cities)):
-        test_values.append(i) 
+    
     res = {}
-    for key in cities:
-        for value in test_values:
-            res[value] = key
-            test_values.remove(value)
+    for i in key:
+        for j in value:
+            res[i] = j
+            value.remove(j)
             break  
     return res 
+print(create_dictionary([1,2,3],["one","two","three"]))
 
 
 
