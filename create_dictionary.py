@@ -7,4 +7,19 @@ def create_dictionary(key, value):
     Returns:
         dict: dictionary with keys and values
     """
-    return
+    
+    test_values=[]
+    for i in range(len(cities)):
+        test_values.append(i) 
+    res = {}
+    for key in cities:
+        for value in test_values:
+            res[value] = key
+            test_values.remove(value)
+            break  
+    return res 
+
+
+
+# key = [1, 2, 3] value = ["one", "two", "three"]
+# {1: "one", 2: "two", 3: "three"}

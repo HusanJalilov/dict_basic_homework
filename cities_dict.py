@@ -8,19 +8,13 @@ def cities_dict(cities:list):
     """
     test_values=[]
     for i in range(len(cities)):
-        test_values.append(i)
-
-    
-    
-  
-
+        test_values.append(i) 
     res = {}
     for key in cities:
         for value in test_values:
             res[value] = key
             test_values.remove(value)
             break  
-  
 
     return res 
 print(cities_dict(["Bukhara", "Khiva", "Namangan", "Samarkand", "Tashkent"]))
