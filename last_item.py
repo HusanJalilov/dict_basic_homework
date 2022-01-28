@@ -4,3 +4,4 @@ def last_item():
     """
     data = {'a': 1, 'b': 2}
     return data['b']
+print(last_item())
