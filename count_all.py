@@ -15,10 +15,10 @@ def count_all(txt):
         elif not x.isdigit():
             if x!=" ":
                 d.append(x)
+    b={"LETTERS":len(d),"DIGIT":len(s)}
             
-            
-    return {"LETTERS":len(d),"DIGIT":len(s)}
+    return b
     
             
         
-print(count_all("python foundations 2022"))
+print(count_all("Hello World"))
