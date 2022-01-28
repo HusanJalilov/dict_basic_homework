@@ -22,5 +22,5 @@ def cities_dict(cities:list):
             break  
   
 
-    return str(res)  
+    return res 
 print(cities_dict(["Bukhara", "Khiva", "Namangan", "Samarkand", "Tashkent"]))
