@@ -15,7 +15,7 @@ def count_all(txt):
         elif not x.isdigit():
             if x!=" ":
                 d.append(x)
-    b={"LETTERS":len(d),"DIGIT":len(s)}
+    b={"LETTERS":len(d),"DIGITS":len(s)}
             
     return b
     
