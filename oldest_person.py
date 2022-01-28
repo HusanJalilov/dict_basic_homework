@@ -14,7 +14,14 @@ def oldest(people:dict):
     # l=max(k)
     # if l in people.values():
     #     return people.values(l)    
-    return max(people)
+    # s=max(people.values())
+    # for x in people:
+    #     if people[x]==s:
+    #         return people[x]
+
+    return max(people, key=people.get)
+        
+
     
         
-print(oldest({"Javohir": 22, "Sharof": 23, "Tolib": 34, "Rustam": 16}))
+print(oldest({"Javohir": 88, "Sharof": 23, "Tolib": 34, "Rustam": 16}))
